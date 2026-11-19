@@ -374,6 +374,7 @@
   .tk.arrow kbd{background:#d9dde3; color:#2b2f36; border-bottom-color:#a9aeb7; border-radius:50%; min-width:1.55em; padding:0;}
   .tk .rep{font-size:9px; font-weight:800; color:#fff; background:#8a3fb0; border-radius:8px; padding:2px 4px; line-height:1;}
   .keyseq .ksep{align-self:flex-end; margin-bottom:.25em;}
+  .keyseq, .kwrap, .nb{white-space:nowrap;}
   .mlab{display:inline-block; font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:.74em; font-weight:700; color:#fff; background:#16191e; padding:2px 5px; border-radius:2px; align-self:flex-end; white-space:nowrap;}
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]) .tk kbd{box-shadow:0 0 0 1px rgba(255,255,255,.22);}
@@ -489,11 +490,11 @@
       '<ul><li>einmal: natürlicher Logarithmus <code>ln</code></li><li>zweimal: Zehnerlogarithmus <code>log</code></li><li>dreimal: Logarithmus mit beliebiger Basis <code>log<sub>□</sub></code></li></ul>'+
       scr("n_log", "Logarithmus", "log₂(1024) = 10 und ln(1) = 0")+
       '<h4>Die beiden Minus-Tasten</h4>'+
-      '<p>[[neg]] ist das <strong>Vorzeichen</strong> (negative Zahl). Steht es zwischen zwei Zahlen, rechnet der Rechner mal (−1).</p>'+
+      '<p>[[neg]] ist das <strong>Vorzeichen</strong> (negative Zahl). Steht es zwischen zwei Zahlen, rechnet der Rechner mal <span class="nb">(−1)</span>.</p>'+
       scr("s_neg", "Vorzeichen-Taste", "−5·−3 = 15 und 6 −4 = 6·(−4) = −24")+
       '<p>[[minus]] ist das <strong>Rechenzeichen</strong> der Subtraktion. Tippst du es zu Beginn der Eingabezeile, wird vom letzten Resultat subtrahiert. <code>ans</code> (answer) steht für das letzte Resultat.</p>'+
       scr("s_ans", "Minus-Taste mit ans", "20−8 = 12, danach − 3: ans−3 = 9")+
-      '<p class="tip"><strong>Achtung:</strong> Der Rechner quadriert vor dem Vorzeichen: [[neg 4 x2]] ergibt −16. Für (−4)² brauchst du Klammern.</p>'+
+      '<p class="tip"><strong>Achtung:</strong> Der Rechner quadriert vor dem Vorzeichen: [[neg 4 x2]] ergibt −16. Für <span class="nb">(−4)²</span> brauchst du Klammern.</p>'+
       '<h4>Werte speichern und abrufen</h4>'+
       '<p><strong>Speichern:</strong> Wert eintippen, dann [[sto]] und die Variable mit [[var]] wählen, zum Schluss [[enter]]. Mehrmaliges Drücken von [[var]] wechselt zwischen x, y, z, t, a, b, c, d.</p>'+
       '<p><strong>Abrufen:</strong> [[var]] fügt die Variable ein, [[enter]] zeigt ihren Wert. Du kannst die Variable auch direkt in einer Rechnung verwenden.</p>'+
